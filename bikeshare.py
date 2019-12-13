@@ -12,7 +12,14 @@ months = { 'january':1,
            'may':5,
            'june':6,
            'all':'all'}
-days = [ 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'all']
+days = [ 'sunday',
+         'monday',
+         'tuesday',
+         'wednesday',
+         'thursday',
+         'friday',
+         'saturday',
+         'all']
 
 def get_filters():
     """
