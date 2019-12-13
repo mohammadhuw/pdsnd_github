@@ -5,7 +5,13 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-months = { 'january':1, 'february':2,'march':3,'april':4,'may':5,'june':6, 'all':'all'}
+months = { 'january':1,
+           'february':2,
+           'march':3,
+           'april':4,
+           'may':5,
+           'june':6,
+           'all':'all'}
 days = [ 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'all']
 
 def get_filters():
@@ -131,38 +137,38 @@ def user_stats(df):
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
-  
+
    # TO DO: Display counts of user types
     df["User Type"] = df["User Type"]
-    print('the counts of user type is \n', df['User Type'].value_counts()) 
+    print('the counts of user type is \n', df['User Type'].value_counts())
 
     # TO DO: Display counts of gender
-    
+
     if 'Gender' not in df.columns:
         print('this city have no gender ')
     else:
-      mode = df['Gender'].value_counts()  
+      mode = df['Gender'].value_counts()
       print('Gender count is :',mode)
-    
+
     # TO DO: Display earliest, most recent, and most common year of birth
     if 'Birth Year' not in df.columns:
         print('this city have no birth year data\n')
-    else:    
+    else:
       mode = df['Birth Year'].value_counts()
       print('most common year of birth is \n',mode)
       print('most recent year of birth is ', df['Birth Year'].max())
       print('most earliest year of birth is ', df['Birth Year'].min())
-        
 
-    
-    
-   
-   
-    
-  
+
+
+
+
+
+
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-    
+
 
 
 def display_data(df):
@@ -179,7 +185,7 @@ def display_data(df):
            end_data = input("Do you want continue? ").lower()
            if end_data == 'no':
                break
-   
+
 
 def main():
     while True:
@@ -199,4 +205,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
