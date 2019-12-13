@@ -5,13 +5,13 @@
 bikeshare.py
 
 ### Description
-data about bikeshare
+data about bikeshare that provide real information about people in three largest city in US
 
 ### Files used
 bikeshare
 data files
-chicago
-waishgton
+Chicago
+washington
 new york city
 
 ### Credits
